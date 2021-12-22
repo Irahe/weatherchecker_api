@@ -1,0 +1,30 @@
+{
+  "name": "weatherchecker_api",
+  "version": "1.0.0",
+  "description": "this is a simple weather checker",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "dev": "nodemon ./server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irahe/weatherchecker_api.git"
+  },
+  "author": "Irahe Kasprzykowski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Irahe/weatherchecker_api/issues"
+  },
+  "homepage": "https://github.com/Irahe/weatherchecker_api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.95.15",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "restify": "^8.6.0",
+    "restify-cors-middleware": "^1.1.1",
+    "sha1": "^1.1.1"
+  }
+}
