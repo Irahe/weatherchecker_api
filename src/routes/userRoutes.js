@@ -18,7 +18,7 @@ module.exports = ({ knex, server, jwt }) => {
             if (user) {
                 await userController.create(req, res, knex);
             } else {
-                throw new Error('Token inválido');
+                throw new Error('Invalid Token');
             }
         } catch (error) {
             errorController.returnInternalServerError(error, res);

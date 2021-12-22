@@ -34,7 +34,7 @@ module.exports = {
                 if (err) {
                     throw new Error('Unauthorized');
                 } else {
-                    if (tokenData.context === context) {
+                    if (tokenData.context === context || context === 'User') {
                         return tokenData.user;
                     } else {
                         return false;
